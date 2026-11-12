@@ -1,0 +1,21 @@
+{
+  "name": "@walkwithme/ios",
+  "version": "0.1.0",
+  "private": true,
+  "main": "expo/AppEntry",
+  "scripts": {
+    "start": "node --max-old-space-size=1024 --max-semi-space-size=8 ../../node_modules/expo/bin/cli start --host lan",
+    "ios": "node --max-old-space-size=1024 --max-semi-space-size=8 ../../node_modules/expo/bin/cli start --host lan --ios"
+  },
+  "dependencies": {
+    "@walkwithme/shared": "*",
+    "expo": "~58.0.0",
+    "expo-constants": "~58.0.16",
+    "expo-status-bar": "~58.0.4",
+    "react": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-safe-area-context": "~5.11.1",
+    "react-native-svg": "15.16.0",
+    "socket.io-client": "^4.8.1"
+  }
+}

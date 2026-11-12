@@ -1,0 +1,8 @@
+{
+  "name": "@walkwithme/shared",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "peerDependencies": { "expo": ">=58", "expo-constants": ">=58", "react": ">=19.3", "react-native": ">=0.88", "socket.io-client": ">=4.8" }
+}

@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Walk with Me",
+    "slug": "walk-with-me-ios",
+    "scheme": "walkwithme",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": { "bundleIdentifier": "ug.ac.gu.walkwithme", "supportsTablet": false },
+    "plugins": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "walkwithme",
+  "private": true,
+  "workspaces": ["apps/*", "shared", "backend"],
+  "scripts": {
+    "dev:api": "npm --workspace backend run dev",
+    "start:android": "npm --workspace @walkwithme/android start",
+    "start:ios": "npm --workspace @walkwithme/ios start"
+  },
+  "devDependencies": {
+    "@types/react": "~19.3.0",
+    "typescript": "~6.0.3"
+  }
+}

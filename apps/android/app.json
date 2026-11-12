@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Walk with Me",
+    "slug": "walk-with-me-android",
+    "scheme": "walkwithme",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": { "package": "ug.ac.gu.walkwithme", "permissions": [] },
+    "plugins": []
+  }
+}
