@@ -5,8 +5,8 @@
     "scheme": "walkwithme",
     "version": "0.1.0",
     "orientation": "portrait",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "ios": { "bundleIdentifier": "ug.ac.gu.walkwithme", "supportsTablet": false },
-    "plugins": []
+    "plugins": [["expo-location", { "locationWhenInUsePermission": "Allow Walk with Me to share an approximate position with people in your active walk.", "isAndroidBackgroundLocationEnabled": false, "isIosBackgroundLocationEnabled": false }], ["expo-contacts", { "contactsPermission": "Allow Walk with Me to find friends who already have verified accounts. Your address book is not uploaded or stored." }]]
   }
 }

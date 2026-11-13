@@ -1,5 +1,8 @@
 import Constants from 'expo-constants';
 
+// Expo inlines these public build-time variables; this declaration avoids adding Node types to the mobile app.
+declare const process: { env: Record<string, string | undefined> };
+
 /** Small fetch wrapper. Keeping transport here makes it easy to replace REST with another adapter. */
 const expoHost = Constants.expoConfig?.hostUri?.split(':')[0];
 const defaultApiUrl = expoHost ? `http://${expoHost}:4000/api` : 'http://localhost:4000/api';

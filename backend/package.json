@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "scripts": { "dev": "node --watch src/server.js", "dev:api": "node --watch src/server.js", "start": "node src/server.js", "seed": "node src/db/seed.js" },
+  "scripts": { "dev": "node --watch src/server.js", "dev:api": "node --watch src/server.js", "start": "node src/server.js", "seed": "node src/db/seed.js", "admin:create": "node src/admin/createAdmin.js" },
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "better-sqlite3": "^12.4.1",

@@ -1,4 +1,4 @@
-export type User = { id: string; name: string; email: string; studentId?: string; availability: string };
+export type User = { id: string; name: string; email: string; studentId?: string; availability: string; role?: 'student'|'transporter'|'admin'; phoneVerified?: boolean; savedStart?: {label:string;latitude:number;longitude:number}|null };
 export type Landmark = { id: string; name: string; x: number; y: number; kind: string };
 export type Walk = { id: string; ownerId: string; ownerName: string; originId: string; destinationId: string; status: 'active'|'completed'|'cancelled'; sharingEnabled: boolean; createdAt: string; endedAt?: string; participants: Participant[]; messages?: Message[] };
 export type Participant = { userId: string; name: string; joinedAt: string; sharingEnabled: boolean; area?: { x: number; y: number }; status: 'joined'|'left' };
