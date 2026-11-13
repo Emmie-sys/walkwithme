@@ -4,7 +4,7 @@ import type { Message, Walk } from '../types';
 
 function createSocket() { return io(apiBaseUrl.replace(/\/api\/?$/,''),{auth:callback=>callback({token:getAuthToken()}),reconnection:true,timeout:10000}); }
 export function subscribeToActivity(onChanged:()=>void) {
-  const socket=createSocket();socket.on('activity:changed',onChanged);return()=>socket.disconnect();
+  const socket=createSocket();socket.on('activity:changed',onChanged);return()=>{socket.disconnect();};
 }
 
 /** Realtime transport is isolated so polling or another event provider can replace it cleanly. */

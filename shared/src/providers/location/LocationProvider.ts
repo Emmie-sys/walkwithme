@@ -9,12 +9,14 @@ export type LocationSubscription={remove:()=>void};
 export interface LocationProvider {
   permissionState():Promise<PermissionState>;
   requestForegroundPermission():Promise<PermissionState>;
+  getCurrentFix():Promise<LocationFix>;
   watchForeground(onLocation:(fix:LocationFix)=>void,onError:(error:Error)=>void):Promise<LocationSubscription>;
 }
 
-/** Default provider prevents accidental collection until location policy and UI consent are approved. */
+/** Deny-all provider for previews/tests that must not request device location. */
 export const disabledLocationProvider:LocationProvider={
   async permissionState(){return 'unavailable';},
   async requestForegroundPermission(){return 'unavailable';},
+  async getCurrentFix(){throw new Error('Location is unavailable in this provider.');},
   async watchForeground(){throw new Error('Location collection is not enabled in this build.');},
 };

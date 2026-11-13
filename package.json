@@ -4,6 +4,8 @@
   "workspaces": ["apps/*", "shared", "backend"],
   "scripts": {
     "dev:api": "npm --workspace backend run dev",
+    "dev:admin": "npm --workspace @walkwithme/admin run dev",
+    "build:admin": "npm --workspace @walkwithme/admin run build",
     "start:android": "npm --workspace @walkwithme/android start",
     "start:ios": "npm --workspace @walkwithme/ios start"
   },

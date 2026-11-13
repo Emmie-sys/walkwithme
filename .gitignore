@@ -1,5 +1,7 @@
 node_modules/
 .expo/
+.expo-export/
+.expo-export-ios/
 dist/
 coverage/
 *.db
