@@ -6,6 +6,13 @@
     "dev:api": "npm --workspace backend run dev",
     "dev:admin": "npm --workspace @walkwithme/admin run dev",
     "build:admin": "npm --workspace @walkwithme/admin run build",
+    "eas:init:android": "npm --workspace @walkwithme/android run eas:init",
+    "build:android:apk": "npm --workspace @walkwithme/android run build:preview",
+    "build:android:store": "npm --workspace @walkwithme/android run build:production",
+    "eas:init:ios": "npm --workspace @walkwithme/ios run eas:init",
+    "build:ios:preview": "npm --workspace @walkwithme/ios run build:preview",
+    "build:ios:store": "npm --workspace @walkwithme/ios run build:production",
+    "submit:ios:testflight": "npm --workspace @walkwithme/ios run submit:testflight",
     "start:android": "npm --workspace @walkwithme/android start",
     "start:ios": "npm --workspace @walkwithme/ios start"
   },

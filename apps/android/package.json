@@ -4,6 +4,9 @@
   "private": true,
   "main": "expo/AppEntry",
   "scripts": {
+    "eas:init": "npx --yes eas-cli@27.9.0 init",
+    "build:preview": "npx --yes eas-cli@27.9.0 build --platform android --profile preview",
+    "build:production": "npx --yes eas-cli@27.9.0 build --platform android --profile production",
     "start": "node --max-old-space-size=1024 --max-semi-space-size=8 ../../node_modules/expo/bin/cli start --host lan",
     "android": "node --max-old-space-size=1024 --max-semi-space-size=8 ../../node_modules/expo/bin/cli start --host lan --android"
   },

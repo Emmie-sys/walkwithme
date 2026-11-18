@@ -1,0 +1,19 @@
+# EAS reads this file from the Git repository root for both Expo workspaces.
+node_modules/
+.expo/
+.expo-export/
+.expo-export-ios/
+release-artifacts/
+dist/
+coverage/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+/backend/data/
+.env
+.env.*
+*.log
+.git/

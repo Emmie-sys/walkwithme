@@ -1,0 +1,25 @@
+{
+  "cli": {
+    "version": "27.9.0",
+    "appVersionSource": "remote",
+    "requireCommit": false
+  },
+  "build": {
+    "preview": {
+      "environment": "preview",
+      "distribution": "internal",
+      "autoIncrement": true,
+      "env": { "APP_VARIANT": "preview" },
+      "android": { "buildType": "apk" }
+    },
+    "production": {
+      "environment": "production",
+      "distribution": "store",
+      "autoIncrement": true,
+      "env": { "APP_VARIANT": "production" }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
