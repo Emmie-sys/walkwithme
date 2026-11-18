@@ -10,3 +10,8 @@ Foreground location is requested only after a student explicitly enables it for 
 - Other fictional test accounts use the same password; see the root [README](../../README.md#development-and-test-credentials).
 
 These credentials work only with the local seeded API. They are not university accounts.
+# Android installable builds
+
+Run `npm run build:preview` from this workspace to create an internally shareable APK with EAS Build. Configure `EXPO_PUBLIC_API_URL` and `EXPO_PUBLIC_GOOGLE_MAPS_API_KEY` in the EAS `preview` environment first. For a phone on the same Wi-Fi as the local backend, the API URL must use the computer's LAN IPv4 address, not `localhost`.
+
+Run `npm run build:production` for the Android store bundle. Production requires an HTTPS API URL. Full instructions and versioning notes are in [../../RELEASE_BUILDS.md](../../RELEASE_BUILDS.md).

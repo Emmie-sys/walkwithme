@@ -101,3 +101,6 @@ Foreground location is consent-gated and rounded before persistence; precise GPS
 Feature screens call the shared API adapter, not fetch directly. Backend route handlers enforce authentication and delegate walk rules to the walk service. SQLite schema changes belong in a new numbered migration; do not edit an already applied migration. Each app shell can later add platform-specific permission and native configuration without duplicating feature screens.
 
 More detail: [Architecture](docs/ARCHITECTURE.md), [API contract](docs/API.md), [Privacy and safety](docs/PRIVACY_SAFETY.md), and [Contributing](docs/CONTRIBUTING.md).
+# Mobile release builds
+
+See [RELEASE_BUILDS.md](RELEASE_BUILDS.md) for Android APK and iOS build setup, versioning, signing, and the local backend limitations for installed apps.

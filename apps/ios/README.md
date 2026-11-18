@@ -11,3 +11,8 @@ These credentials work only with the local seeded API. They are not university a
 # iOS app
 
 The iOS app is an Expo workspace. It requests foreground location only after a student explicitly enables sharing or chooses a location action. It does not request background location. iOS renders maps with the native Apple map provider; the university should still approve its map-data and privacy configuration before production use.
+# iOS installable builds
+
+Run `npm run build:preview` from this workspace for an internal ad hoc build after configuring an HTTPS API URL in the EAS `preview` environment and registering the tester devices with the Apple Developer account. For broader tester distribution, build and submit to TestFlight with `npm run build:production` and `npm run submit:testflight` after setting the HTTPS API URL in the EAS `production` environment.
+
+An iOS app cannot reach the development computer using `localhost`; use a controlled HTTPS tunnel for local backend testing. Full instructions and versioning notes are in [../../RELEASE_BUILDS.md](../../RELEASE_BUILDS.md).

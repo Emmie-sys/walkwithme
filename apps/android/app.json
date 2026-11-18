@@ -6,7 +6,35 @@
     "version": "0.1.0",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
-    "android": { "package": "ug.ac.gu.walkwithme", "softwareKeyboardLayoutMode": "resize", "blockedPermissions": ["android.permission.WRITE_CONTACTS"] },
-    "plugins": [["expo-location", { "locationWhenInUsePermission": "Allow Walk with Me to share an approximate position with people in your active walk.", "isAndroidBackgroundLocationEnabled": false, "isIosBackgroundLocationEnabled": false }], ["expo-contacts", { "contactsPermission": "Allow Walk with Me to find friends who already have verified accounts. Your address book is not uploaded or stored." }]]
+    "android": {
+      "package": "ug.ac.gu.walkwithme",
+      "versionCode": 1,
+      "softwareKeyboardLayoutMode": "resize",
+      "blockedPermissions": [
+        "android.permission.WRITE_CONTACTS"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Walk with Me to share an approximate position with people in your active walk.",
+          "isAndroidBackgroundLocationEnabled": false,
+          "isIosBackgroundLocationEnabled": false
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Allow Walk with Me to find friends who already have verified accounts. Your address book is not uploaded or stored."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3c044dd6-fb11-47da-a452-1f634c699055"
+      }
+    },
+    "owner": "emmie_oola"
   }
 }

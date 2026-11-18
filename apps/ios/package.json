@@ -4,6 +4,10 @@
   "private": true,
   "main": "expo/AppEntry",
   "scripts": {
+    "eas:init": "npx --yes eas-cli@27.9.0 init",
+    "build:preview": "npx --yes eas-cli@27.9.0 build --platform ios --profile preview",
+    "build:production": "npx --yes eas-cli@27.9.0 build --platform ios --profile production",
+    "submit:testflight": "npx --yes eas-cli@27.9.0 submit --platform ios --profile production",
     "start": "node --max-old-space-size=1024 --max-semi-space-size=8 ../../node_modules/expo/bin/cli start --host lan",
     "ios": "node --max-old-space-size=1024 --max-semi-space-size=8 ../../node_modules/expo/bin/cli start --host lan --ios"
   },
